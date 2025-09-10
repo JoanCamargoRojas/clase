@@ -1,0 +1,96 @@
+/* Fuente general */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navegación */
+nav {
+    background-color: purple;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+main {
+    padding: 2rem;
+}
+
+/* Tabla de noticias */
+.tabla-noticias table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.tabla-noticias th, .tabla-noticias td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: left;
+}
+.tabla-noticias th {
+    background-color: purple;
+    color: white;
+}
+.tabla-noticias tr:hover {
+    background-color: #e6f0ff;
+}
+
+/* Tarjetas de noticias */
+.tarjetas {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card p {
+    padding: 1rem;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
