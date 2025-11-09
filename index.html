@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web Asíncrona - COP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 merch de Withered ascension</h1>
+        <button id="btn-login" class="login-btn">Iniciar Sesión</button>
+        <p id="user-info" style="display: none;">Bienvenido, <span id="username-display"></span></p>
+    </header>
+
+    <main id="main-content" style="display: none;">
+        <section id="catalogo-productos">
+            <h2>Catálogo de Productos</h2>
+        </section>
+        
+        <aside id="carrito-container">
+            <h2>🛍️ Carrito de Compras</h2>
+            <ul id="carrito-items">
+            </ul>
+            <p><strong>Total a Pagar: <span id="carrito-total">$0</span></strong></p>
+        </aside>
+    </main>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h3>Iniciar Sesión</h3>
+            <input type="text" id="input-username" placeholder="Usuario (ej: mor_2314)">
+            <input type="password" id="input-password" placeholder="Contraseña (ej: 83r5^_)">
+            <button id="submit-login">Entrar</button>
+            <button id="close-modal">Cerrar</button>
+            <p id="login-message" class="error-msg"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
